@@ -25,7 +25,6 @@ public class FileService {
         Gson gson = new Gson();
         try {
             list = gson.fromJson(new FileReader(path), type);
-            System.out.println("loadListFromFile " + list);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
