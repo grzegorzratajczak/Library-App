@@ -17,7 +17,8 @@ public class AuthorDaoFile implements DaoInterface {
 
     public List<Author> authorList = new ArrayList<>();
     String path = "/home/grzex/Pulpit/repogithub/libraryApp/src/main/resources/authorlist.json";
-    Type targetClassType = new TypeToken<ArrayList<Author>>() { }.getType();
+    Type targetClassType = new TypeToken<ArrayList<Author>>() {
+    }.getType();
 
     @Override
     public void save(Object entity) {
@@ -49,21 +50,17 @@ public class AuthorDaoFile implements DaoInterface {
 
     }
 
-    public void saveAuthorToFile() {
+    /**
+     * method for save authors[] list to file
+     */
+    public void saveAuthorsListToFile() {
         saveListToFile(authorList, path);
     }
 
-//    public void loadAuthorsListFromFile(){
-//        Gson gson = new Gson();
-//        Type targetClassType = new TypeToken<ArrayList<Author>>() { }.getType();
-//        try {
-//            authorList = gson.fromJson(new FileReader(path),targetClassType);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-    public void loadAuthorsListFromFile(){
-        authorList = loadListFromFile(authorList,path,targetClassType);
+    /**
+     * method for load authors[] list from file
+     */
+    public void loadAuthorsListFromFile() {
+        authorList = loadListFromFile(authorList, path, targetClassType);
     }
 }

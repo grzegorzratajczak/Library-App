@@ -26,7 +26,7 @@ public class CreateLists {
 
         authorDaoFile.save(author1);
         authorDaoFile.save(author2);
-        authorDaoFile.saveAuthorToFile();
+        authorDaoFile.saveAuthorsListToFile();
 
         bookDaoFile.save(book1);
         bookDaoFile.save(book2);
@@ -36,7 +36,7 @@ public class CreateLists {
         bookDaoFile.save(book6);
         bookDaoFile.save(book7);
         bookDaoFile.save(book8);
-        bookDaoFile.saveBookToFile();
+        bookDaoFile.saveBooksListToFile();
 
     }
 }

@@ -50,10 +50,16 @@ public class BookDaoFile implements DaoInterface {
         bookList.clear();
     }
 
-    public void saveBookToFile() {
+    /**
+     * method for save books[] list into file
+     */
+    public void saveBooksListToFile() {
         saveListToFile(bookList, path);
     }
 
+    /**
+     * method for load books[] list from file
+     */
     public void loadBooksListFromFile() {
         bookList = loadListFromFile(bookList, path, targetClassType);
     }
