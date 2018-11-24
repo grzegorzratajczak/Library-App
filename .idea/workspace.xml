@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910121c7-309d-438d-8b2f-da7d13e19f05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DaoInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AuthorDaoFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/BookDaoFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/FileDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/Author.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/HibernateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AuthorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/StartApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,41 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Author.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/StartApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="216">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,35 +37,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/config/HibernateUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,15 +66,20 @@
         <option value="$PROJECT_DIR$/src/main/java/library/Authors.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Start.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/StartApp.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/config/HibernateUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Author.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DaoInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/HibernateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AuthorDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AuthorDaoFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/BookDaoFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/FileDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/StartApp.java" />
       </list>
     </option>
   </component>
@@ -229,7 +184,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543051259722" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543056336931" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../repozytoria/web_library_app_spring_java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -241,6 +196,7 @@
       <recent name="config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/dao" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
@@ -256,6 +212,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.StartApp" />
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StartApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -266,42 +242,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543047750184</updated>
-      <workItem from="1543047753827" duration="3500000" />
+      <workItem from="1543047753827" duration="8109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3500000" />
+    <option name="totallyTimeSpent" value="8109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Persistence" side_tool="true" />
-      <window_info id="Image Layers" />
       <window_info id="Designer" />
-      <window_info id="UI Designer" />
+      <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17478053" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17478053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3306189" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3306189" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -318,37 +297,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/StartApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/HibernateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="17" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/HibernateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-18">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="234">
+          <caret line="13" column="79" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -361,22 +327,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="252">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AuthorDaoFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="72">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/BookDaoFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/FileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AuthorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="7" lean-forward="true" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/StartApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
