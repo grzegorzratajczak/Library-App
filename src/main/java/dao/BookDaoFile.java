@@ -1,26 +1,27 @@
 package dao;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import lombok.ToString;
 import model.Book;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import static dao.FileService.saveListToFile;
+
+//import static dao.FileService.readListFromFile;
+
+@ToString
 public class BookDaoFile implements DaoInterface {
 
     List<Book> bookList = new ArrayList<>();
-    FileWriter fileWriter;
-
-    {
-        try {
-            fileWriter = new FileWriter("/home/grzex/Pulpit/repogithub/libraryApp/src/main/resources/booklist.json");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    String path = "/home/grzex/Pulpit/repogithub/libraryApp/src/main/resources/booklist.json";
+    String pathBook = "/home/grzex/Pulpit/repogithub/libraryApp/src/main/resources/book.json";
 
     @Override
     public void save(Object entity) {
@@ -53,11 +54,15 @@ public class BookDaoFile implements DaoInterface {
     }
 
     public void saveBookToFile() {
+        saveListToFile(bookList, path);
+    }
+
+    public void loadBooksListFromFile(){
         Gson gson = new Gson();
-        gson.toJson(bookList, fileWriter);
+        Type targetClassType = new TypeToken<ArrayList<Book>>() { }.getType();
         try {
-            fileWriter.flush();
-        } catch (IOException e) {
+            bookList = gson.fromJson(new FileReader(path),targetClassType);
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
