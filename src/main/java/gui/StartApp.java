@@ -5,7 +5,7 @@ import dao.BookDaoFile;
 
 public class StartApp {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         BookDaoFile bookDaoFile = new BookDaoFile();
         AuthorDaoFile authorDaoFile = new AuthorDaoFile();

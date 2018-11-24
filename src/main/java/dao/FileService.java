@@ -2,7 +2,10 @@ package dao;
 
 import com.google.gson.Gson;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.lang.reflect.Type;
 import java.util.List;
 
 public class FileService {
@@ -18,9 +21,15 @@ public class FileService {
         }
     }
 
-//    static List readListFromFile(Object object, String path) throws IOException {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//
-//        return (List) objectMapper.readValue(path, object.getClass());
-//    }
+    static List loadListFromFile(List list, String path, Type type) {
+        Gson gson = new Gson();
+        try {
+            list = gson.fromJson(new FileReader(path), type);
+            System.out.println("loadListFromFile " + list);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
 }
+
