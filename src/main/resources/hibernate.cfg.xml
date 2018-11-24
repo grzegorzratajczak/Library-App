@@ -11,7 +11,7 @@
             com.mysql.cj.jdbc.Driver
         </property>
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost/j1b
+            jdbc:mysql://localhost/libraryApp
         </property>
         <property name="hibernate.connection.serverTimezone">
             UCT
@@ -31,9 +31,9 @@
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.generate_statistics">true</property>
 
-        <!--<mapping class="com.sda.hibernate.entity.Book"></mapping>-->
+        <mapping class="model.Book"></mapping>
+        <mapping class="model.Author"></mapping>
         <!--<mapping class="com.sda.hibernate.entity.Category"></mapping>-->
-        <!--<mapping class="com.sda.hibernate.entity.Author"></mapping>-->
     </session-factory>
 </hibernate-configuration>
 
